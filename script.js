@@ -285,5 +285,45 @@ document.addEventListener('DOMContentLoaded', () => {
         statsObserver.observe(statsSection);
     }
 
+    // Automatic Carousel Auto-Slide Logic
+    function initAutoSlide(carouselId, intervalTime = 5000) {
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+
+        let isPaused = false;
+        
+        const autoSlide = () => {
+            if (isPaused || document.hidden) return;
+            
+            const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+            const firstCard = carousel.querySelector(':scope > div');
+            if (!firstCard) return;
+            
+            const cardWidth = firstCard.offsetWidth + 24; // Width + gap
+            
+            if (carousel.scrollLeft >= maxScrollLeft - 20) {
+                carousel.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            }
+        };
+
+        setInterval(autoSlide, intervalTime);
+
+        // Pause on interaction
+        carousel.addEventListener('mouseenter', () => isPaused = true);
+        carousel.addEventListener('mouseleave', () => isPaused = false);
+        carousel.addEventListener('touchstart', () => isPaused = true);
+        carousel.addEventListener('touchend', () => {
+            setTimeout(() => isPaused = false, 3000);
+        });
+    }
+
+    // Initialize auto-sliding - High speed, endless loop
+    setTimeout(() => {
+        initAutoSlide('testimonial-carousel', 3000); // 3 seconds
+        initAutoSlide('services-carousel', 3000);    // 3 seconds
+    }, 2000);
+
     console.log('Air Medical India - Emergency Response System Initialized');
 });

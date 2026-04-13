@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/air-medical-logo.png" />
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -91,66 +92,61 @@
     <!-- (Mobile Menu Overlay Removed) -->
 
     <!-- TopNavBar -->
-    <nav class="fixed top-0 w-full z-40 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_16px_32px_rgba(0,53,95,0.06)] transition-all duration-300"
+    <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_16px_32px_rgba(0,53,95,0.06)] border-b border-primary/5 transition-all duration-300"
         id="navbar">
-        <div class="flex justify-between items-center w-full px-6 md:px-8 py-4 max-w-full">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center h-16 md:h-20">
             <div class="flex items-center animate-fade-in-left">
                 <img src="assets/air-medical-logo.png" alt="Air Medical India – Best Air Ambulance Service in India"
-                    class="h-14 md:h-18 w-auto object-contain" />
+                    class="h-7 md:h-12 w-auto object-contain" />
             </div>
 
-            <!-- Mobile Menu Button -->
-            <div class="hidden md:flex items-center space-x-12 animate-fade-in-down">
-                <!-- Navigation Options Removed for Minimalism -->
+            <div class="flex items-center animate-fade-in-down">
+                <!-- Mobile & Desktop Persistent Emergency Button -->
+                <a href="tel:18004108898"
+                    class="bg-secondary text-white px-3 py-2 md:px-6 md:py-2.5 rounded-lg font-headline font-black uppercase tracking-widest text-[8px] md:text-[10px] shadow-lg shadow-secondary/20 hover:scale-105 active:scale-95 transition-all animate-pulse-subtle">
+                    Emergency Hotline
+                </a>
             </div>
-            <a href="tel:18004108898"
-                class="bg-secondary text-on-secondary px-4 py-2 md:px-6 md:py-2.5 rounded-lg font-headline font-extrabold uppercase tracking-widest text-[9px] md:text-[10px] duration-200 ease-in-out hover:shadow-lg hover:shadow-secondary/20 hover:scale-105 animate-pulse-subtle">
-                Emergency Hotline
-            </a>
         </div>
     </nav>
-
     <!-- Hero Section -->
-    <header class="relative min-h-[922px] flex items-center pt-24 overflow-hidden bg-primary-container">
-        <div class="absolute inset-0 bg-[url('assets/92b036b6-6fc4-4277-94c4-1c83e7ef1acf.png')] bg-cover bg-center parallax-bg"
-            data-alt="dramatic view of an air ambulance mission with specialized medical crew and clinical equipment ready for life-saving transport">
+    <header class="relative min-h-[95vh] flex items-center pt-24 overflow-hidden bg-primary-container">
+        <div class="absolute inset-0 bg-[url('assets/air_ambulance_aircraft_hero_image.png')] bg-cover bg-center parallax-bg scale-105"
+            data-alt="dramatic close-up of a long-range medical transport aircraft on the tarmac, ready for emergency air medical dispatch.">
         </div>
-        <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/60 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-transparent"></div>
 
-        <div class="relative container mx-auto px-6 md:px-8 z-10 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-9 stagger-children">
-                <div
-                    class="inline-flex items-center gap-3 bg-secondary px-4 py-1.5 rounded-full text-white font-bold text-xs tracking-tighter mb-8 pulse-motif animate-fade-in-up">
-                    <span class="material-symbols-outlined text-sm"
-                        style="font-variation-settings: 'FILL' 1;">emergency</span>
-                    BEST AIR AMBULANCE SERVICE IN INDIA — ACTIVE 24/7
-                </div>
-                <h1
-                    class="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-8 animate-fade-in-up delay-100">
-                    Every Second <span class="text-secondary">Defines</span> Survival.
-                </h1>
-                <p
-                    class="text-primary-fixed-dim text-lg md:text-xl max-w-xl mb-10 leading-relaxed font-body font-light animate-fade-in-up delay-200">
-                    India's premier air ambulance service near you. Deploying ICU-grade aviation assets within
-                    minutes for life-critical transfers across Delhi, Mumbai, Bangalore and 22+ cities nationwide.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-6 animate-fade-in-up delay-300">
-                    <a href="#quote-form"
-                        class="group bg-white text-primary px-8 py-3.5 rounded-lg font-headline font-bold text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 active:translate-y-0 text-center">
-                        Request Dispatch
-                        <span
-                            class="material-symbols-outlined inline-block ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                    <a href="#services"
-                        class="border border-white/30 text-white backdrop-blur-md px-8 py-3.5 rounded-lg font-headline font-bold text-sm uppercase tracking-widest hover:bg-white/10 transition-all hover:border-white/60 text-center">
-                        View Cost & Fleet
-                    </a>
-                </div>
+        <div class="max-w-4xl text-center md:text-left px-4 md:px-0">
+            <div
+                class="inline-flex items-center gap-3 bg-slate-950/60 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full text-white/90 font-bold text-[9px] md:text-[10px] uppercase tracking-[0.2em] mb-8 animate-fade-in-up mx-auto md:mx-0">
+                <div class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></div>
+                Available 24/7/365 — BEST AIR AMBULANCE SERVICE IN INDIA
+            </div>
+            <h1
+                class="font-headline text-4xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-[0.9] tracking-tighter animate-fade-in-up delay-100 uppercase">
+                Every Second<br /><span class="text-secondary">Defines</span> Survival.
+            </h1>
+            <p
+                class="text-white/80 font-body text-xs md:text-xl mb-10 max-w-2xl leading-relaxed animate-fade-in-up delay-200 mx-auto md:mx-0 px-4 md:px-0">
+                India's premier air ambulance service near you. Deploying ICU-grade aviation assets within
+                minutes for life-critical transfers across nationwide.
+            </p>
+            <div
+                class="flex flex-col sm:flex-row gap-3 animate-fade-in-up delay-300 justify-center md:justify-start px-6 md:px-0">
+                <a href="https://wa.me/918004108898?text=I%20would%20like%20to%20request%20an%20air%20ambulance%20dispatch."
+                    class="group bg-primary text-white px-8 py-4 md:py-3 rounded-lg font-headline font-bold text-[10px] md:text-[11px] uppercase tracking-widest hover:bg-secondary transition-all duration-300 shadow-2xl flex items-center justify-center gap-2 border border-white/10">
+                    <span class="material-symbols-outlined text-base">call</span>
+                    Request Dispatch
+                </a>
+                <a href="#services"
+                    class="bg-white/5 border border-white/10 backdrop-blur-md text-white px-8 py-4 md:py-3 rounded-lg font-headline font-bold text-[10px] md:text-[11px] uppercase tracking-widest hover:bg-white/20 transition-all text-center flex items-center justify-center">
+                    View Cost & Fleet
+                </a>
             </div>
         </div>
+        </div>
 
-        <!-- Decorative Diagonal -->
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-background diagonal-bg"></div>
+
     </header>
 
     <!-- Global Network Section -->
@@ -221,11 +217,6 @@
                             class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-700">
                         </div>
                         <div class="relative z-10">
-                            <div
-                                class="inline-flex items-center gap-2 bg-secondary/20 text-secondary-fixed-dim px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-secondary/30 animate-pulse">
-                                <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
-                                Clinical Precision
-                            </div>
                             <h2 class="font-headline text-3xl font-extrabold leading-tight mb-8 scroll-reveal-text">
                                 Rapid Air Ambulance Dispatch — 3 Easy Steps</h2>
 
@@ -279,34 +270,31 @@
                             Check Air Ambulance Price — Free Quote
                         </h3>
                         <form class="space-y-6" id="quote-form">
-                            <div class="form-field opacity-0 translate-y-4">
+                            <div class="animate-fade-in-up delay-100">
                                 <label
-                                    class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Full
+                                    class="block text-[10px] font-black uppercase tracking-widest text-primary/40 mb-2">Full
                                     Name</label>
-                                <input
-                                    class="w-full px-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm placeholder:text-outline hover:bg-surface-container-high"
-                                    placeholder="Enter your name" type="text" name="name" required />
+                                <input type="text" name="name" required
+                                    class="w-full bg-surface-dim border-none rounded-xl px-6 py-4 text-primary font-body placeholder:text-primary/20 focus:ring-2 focus:ring-secondary/20 transition-all"
+                                    placeholder="Enter your name">
                             </div>
+
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div class="form-field opacity-0 translate-y-4 delay-100">
+                                <div class="animate-fade-in-up delay-200">
                                     <label
-                                        class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Phone
+                                        class="block text-[10px] font-black uppercase tracking-widest text-primary/40 mb-2">Phone
                                         Number</label>
-                                    <div class="relative">
-                                        <span
-                                            class="absolute left-4 top-1/2 -translate-y-1/2 text-outline text-sm font-bold">+91</span>
-                                        <input
-                                            class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm placeholder:text-outline hover:bg-surface-container-high"
-                                            placeholder="Enter your number" type="tel" name="phone" required />
-                                    </div>
+                                    <input type="tel" name="phone" required
+                                        class="w-full bg-surface-dim border-none rounded-xl px-6 py-4 text-primary font-body placeholder:text-primary/20 focus:ring-2 focus:ring-secondary/20 transition-all"
+                                        placeholder="+91 Enter your num">
                                 </div>
-                                <div class="form-field opacity-0 translate-y-4 delay-200">
+                                <div class="animate-fade-in-up delay-300">
                                     <label
-                                        class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Email
+                                        class="block text-[10px] font-black uppercase tracking-widest text-primary/40 mb-2">Email
                                         Address</label>
-                                    <input
-                                        class="w-full px-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm placeholder:text-outline hover:bg-surface-container-high"
-                                        placeholder="Enter your email" type="email" name="email" required />
+                                    <input type="email" name="email" required
+                                        class="w-full bg-surface-dim border-none rounded-xl px-6 py-4 text-primary font-body placeholder:text-primary/20 focus:ring-2 focus:ring-secondary/20 transition-all"
+                                        placeholder="Enter your email">
                                 </div>
                             </div>
                             <div class="form-field opacity-0 translate-y-4 delay-300">
@@ -356,121 +344,98 @@
                 <div class="text-secondary font-headline font-black text-6xl opacity-10 animate-pulse-slow">06</div>
             </div>
 
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/20 rounded-xl overflow-hidden shadow-sm">
-                <!-- Service 1 -->
-                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
-                    data-index="0">
-                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+            <div class="relative">
+                <div id="services-carousel"
+                    class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-6 pb-8 px-4 -mx-4">
+                    <!-- Air Ambulance Charter -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                        <img src="assets/medical_jet_flying_in_sky.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Dedicated Medical Jet">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <h3 class="font-headline text-2xl font-bold mb-3">Specialized ICU Charter</h3>
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Dedicated clinical aviation assets
+                                with dual-pilot command and full ICU suites for critical long-range transfers.</p>
+                            <a href="https://wa.me/919217710155?text=Quote%20Request:%20ICU%20Charter"
+                                class="px-6 py-2.5 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Get
+                                Quote</a>
+                        </div>
                     </div>
-                    <span
-                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
-                        data-weight="fill">helicopter</span>
-                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Aero-Medical Evacuation</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Bed-to-bed air ambulance transfers
-                        with continuous
-                        ICU monitoring across the subcontinent. Available as air ambulance service near me in all major
-                        cities.</p>
-                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
-                        href="#">
-                        Explore Protocols <span
-                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                </div>
 
-                <!-- Service 2 -->
-                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
-                    data-index="1">
-                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    <!-- Commercial Stretcher -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                        <img src="assets/commercial_airline_stretcher_service.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Airline Stretcher Service">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <h3 class="font-headline text-2xl font-bold mb-3">Airline Stretcher Solution</h3>
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Cost-effective medical transport on
+                                commercial airlines with dedicated onboard ICU space and clinical support.</p>
+                            <a href="https://wa.me/919217710155?text=Quote%20Request:%20Stretcher%20Service"
+                                class="px-6 py-2.5 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Get
+                                Quote</a>
+                        </div>
                     </div>
-                    <span
-                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
-                        data-weight="fill">cardiology</span>
-                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Cardiac Life Support</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Advanced life-support systems
-                        (ECMO/IABP) specialized for high-altitude transport. Our cardiac air ambulance service in India
-                        operates 24/7.</p>
-                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
-                        href="#">
-                        Explore Protocols <span
-                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                </div>
 
-                <!-- Service 3 -->
-                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
-                    data-index="2">
-                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    <!-- Flight Medical Escort -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                        <img src="assets/flight_medical_escort_service.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Medical Escort">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <h3 class="font-headline text-2xl font-bold mb-3">Clinical Flight Escort</h3>
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Premium bedside-to-bedside medical
+                                coordination with specialized doctors and paramedics on scheduled flights.</p>
+                            <a href="https://wa.me/919217710155?text=Quote%20Request:%20Medical%20Escort"
+                                class="px-6 py-2.5 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Get
+                                Quote</a>
+                        </div>
                     </div>
-                    <span
-                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
-                        data-weight="fill">child_care</span>
-                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Neonatal Care (NICU)</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Incubator-equipped air ambulance
-                        transport for
-                        critical pediatric and neonatal emergencies across India.</p>
-                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
-                        href="#">
-                        Explore Protocols <span
-                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                </div>
 
-                <!-- Service 4 -->
-                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
-                    data-index="3">
-                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    <!-- Organ & Team Transport -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                        <img src="assets/medical_aircraft_interior_icu.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Transplant Logistics">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <h3 class="font-headline text-2xl font-bold mb-3">Rapid Transplant Logistics</h3>
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Time-critical organ and surgical team
+                                transport with green-corridor priority for life-saving transplant missions.</p>
+                            <a href="https://wa.me/919217710155?text=Quote%20Request:%20Transplant%20Logistics"
+                                class="px-6 py-2.5 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Get
+                                Quote</a>
+                        </div>
                     </div>
-                    <span
-                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
-                        data-weight="fill">radiology</span>
-                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Trauma Rapid Response</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Immediate air ambulance extraction
-                        from accident
-                        sites with pre-hospital neuro-stabilization. Fastest ambulance service in Delhi and nationwide.
-                    </p>
-                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
-                        href="#">
-                        Explore Protocols <span
-                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                </div>
 
-                <!-- Service 5 -->
-                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
-                    data-index="4">
-                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    <!-- Ground to Air Transfer -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                        <img src="assets/ground_to_air_transfer.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="ICU Ambulance">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <h3 class="font-headline text-2xl font-bold mb-3">Bedside-to-Bedside Care</h3>
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Synchronized ICU ground ambulance
+                                transfers at both origin and destination for zero-gap medical continuity.</p>
+                            <a href="https://wa.me/919217710155?text=Quote%20Request:%20Ground%20Transfer"
+                                class="px-6 py-2.5 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Get
+                                Quote</a>
+                        </div>
                     </div>
-                    <span
-                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
-                        data-weight="fill">respiratory_rate</span>
-                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Organ Transplant Logistics</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Time-critical organ and surgical
-                        team transport via air ambulance in India with green-corridor priority across all states.</p>
-                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
-                        href="#">
-                        Explore Protocols <span
-                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
-                    data-index="5">
-                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
-                    </div>
-                    <span
-                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
-                        data-weight="fill">public</span>
-                    <h3 class="font-headline text-xl font-bold text-primary mb-4">International Repatriation</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Global medical coordination and
-                        commercial airline medical escorts. Competitive air ambulance cost for international transfers.
-                    </p>
-                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
-                        href="#">
-                        Explore Protocols <span
-                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
-                    </a>
                 </div>
             </div>
         </div>
@@ -580,7 +545,6 @@
             </div>
 
             <div class="relative group">
-                <!-- Carousel Container -->
                 <div id="testimonial-carousel"
                     class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-8 pb-8 -mx-4 px-4">
                     <!-- Testimonial 1 (Priya M.) -->
@@ -615,6 +579,105 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Testimonial 2 (Fideliza Barraca) -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
+                        <div class="flex gap-1 text-secondary mb-6">
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-on-surface text-sm italic leading-relaxed mb-8">
+                            "I would like to express my deepest gratitude to the entire Worldwide Air Medical 24x7 team
+                            for their exceptional service during my father's repatriation from Abu Dhabi to the
+                            Philippines. Their professionalism, coordination, and compassion made the entire process
+                            smooth and reassuring."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xs uppercase">
+                                FB</div>
+                            <div>
+                                <p class="font-headline font-bold text-primary text-sm">Fideliza Barraca</p>
+                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Abu Dhabi to
+                                    Philippines</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 (Philly wall_e) -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
+                        <div class="flex gap-1 text-secondary mb-6">
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-on-surface text-sm italic leading-relaxed mb-8">
+                            "Our heartfelt gratitude to the compassionate and caring staff of Air Medical 24X7. I can't
+                            find words to express my gratitude for making my Dad Mr Dawit Haile and my Mom feel safe
+                            during their journey from hospital Jebel Ali, Dubai to Asmara, Eritrea. The medical escort
+                            was very friendly."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center font-bold text-xs uppercase">
+                                PW</div>
+                            <div>
+                                <p class="font-headline font-bold text-primary text-sm">Philly wall_e</p>
+                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Dubai to
+                                    Asmara, Eritrea</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 (Mohammed Abdulqayyum) -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
+                        <div class="flex gap-1 text-secondary mb-6">
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                            <span class="material-symbols-outlined text-sm"
+                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        </div>
+                        <p class="text-on-surface text-sm italic leading-relaxed mb-8">
+                            "I am very much grateful to Mr. Nitin & Air medical team 24/7 for the excellent services
+                            given during my daughter's repatriation process to Hyderabad from Jeddah. Dr. Agarwal & Mr.
+                            Lateef shown extraordinary support. They are the Best team."
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-10 h-10 bg-tertiary text-white rounded-full flex items-center justify-center font-bold text-xs uppercase">
+                                MA</div>
+                            <div>
+                                <p class="font-headline font-bold text-primary text-sm">Mohammed Abdulqayyum</p>
+                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Jeddah to
+                                    Hyderabad</p>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <!-- Testimonial 2 (Rahul K.) -->
                     <div
@@ -845,92 +908,66 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#001c37] text-white py-16 px-6 md:px-12 relative overflow-hidden">
+    <footer class="bg-[#001c37] text-white py-10 px-6 md:px-12 relative overflow-hidden text-sm">
         <div class="absolute inset-0 bg-gradient-to-t from-secondary/5 to-transparent pointer-events-none"></div>
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 max-w-7xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto relative z-10">
             <div class="md:col-span-4 scroll-reveal-up">
-                <div class="flex items-center gap-3 mb-6 group cursor-pointer">
+                <div class="flex items-center gap-3 mb-4 group cursor-pointer">
                     <img src="assets/air-medical-logo.png" alt="Air Medical India – Air Ambulance Service in India"
-                        class="h-14 w-auto object-contain brightness-0 invert" />
+                        class="h-10 w-auto object-contain brightness-0 invert" />
                 </div>
-                <p class="text-secondary font-black uppercase tracking-widest text-[10px] mb-4">
-                    Air Medical 24X7 — India's Most Certified Air Ambulance Service | CAMTS + ISO + FAA + M Certified
+                <p class="text-secondary font-black uppercase tracking-widest text-[9px] mb-2 leading-relaxed">
+                    Air Medical 24X7 — India's Most Certified Air Ambulance Service
                 </p>
-                <p class="text-slate-400 text-sm mb-8 leading-relaxed">
-                    Trusted by 17,000+ families across 100+ countries. Offices in Dubai (near Terminal 1) and New Delhi.
-                    Available 24x7.
+                <p class="text-slate-400 text-xs mb-6 leading-relaxed">
+                    Trusted by 17,000+ families across 100+ countries. Offices in Dubai and New Delhi. Available 24x7.
                 </p>
-                <div class="flex gap-4">
-                    <a class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:scale-110"
-                        href="https://wa.me/919217710155">
-                        <span class="material-symbols-outlined text-sm">message</span>
-                    </a>
-                </div>
             </div>
 
             <div class="md:col-span-4 scroll-reveal-up delay-100">
-                <h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6 text-slate-500">Global Offices</h5>
-                <div class="space-y-6">
+                <h5 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 text-slate-500">Global Offices</h5>
+                <div class="grid grid-cols-2 gap-4">
                     <div>
-                        <p class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">New Delhi, India
-                        </p>
-                        <p class="text-slate-400 text-xs leading-relaxed">
-                            1111, 11th Floor, Padma Tower 1, Rajendra Place, New Delhi — 110008, India
-                        </p>
-                        <a href="tel:+918800028727"
-                            class="text-white font-bold text-sm mt-1 inline-block hover:text-secondary">+91 88000
+                        <p class="text-secondary font-bold text-[9px] uppercase tracking-widest mb-1">New Delhi</p>
+                        <p class="text-slate-400 text-[10px] leading-tight mb-1">Rajendra Place, New Delhi — 110008</p>
+                        <a href="tel:+918800028727" class="text-white font-bold text-xs hover:text-secondary">+91 88000
                             28727</a>
                     </div>
                     <div>
-                        <p class="text-secondary font-bold text-[10px] uppercase tracking-widest mb-2">Dubai, UAE</p>
-                        <p class="text-slate-400 text-xs leading-relaxed">
-                            310, Garhoud Community, Near Dubai International Airport Terminal-1, P.O. Box 29086, Dubai —
-                            UAE
+                        <p class="text-secondary font-bold text-[9px] uppercase tracking-widest mb-1">Dubai, UAE</p>
+                        <p class="text-slate-400 text-[10px] leading-tight mb-1">Near Dubai Airport Terminal-1, Dubai
                         </p>
-                        <a class="text-white font-bold text-sm mt-1 inline-block hover:text-secondary">
-                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="md:col-span-4 scroll-reveal-up delay-200 text-right md:text-right">
-                <h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6 text-slate-500">Emergency Dispatch</h5>
+            <div class="md:col-span-4 scroll-reveal-up delay-200 text-right">
+                <h5 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 text-slate-500">Emergency Dispatch
+                </h5>
                 <a href="tel:18004108898"
-                    class="font-headline text-4xl md:text-5xl font-black text-white mb-8 hover:text-secondary transition-colors cursor-pointer tracking-tighter group block">
-                    1800 410 8898
-                </a>
-                <div class="flex flex-wrap justify-end gap-3 text-[10px] font-black uppercase tracking-widest">
-                    <a class="text-slate-500 hover:text-white" href="#">Privacy</a>
-                    <span class="text-slate-800">/</span>
-                    <a class="text-slate-500 hover:text-white" href="#">Terms</a>
-                    <span class="text-slate-800">/</span>
-                    <a class="text-slate-500 hover:text-white" href="#">Clinical Standards</a>
+                    class="font-headline text-3xl font-black text-white hover:text-secondary mb-4 block tracking-tighter">1800
+                    410 8898</a>
+                <div class="flex justify-end gap-3 text-[9px] font-black uppercase tracking-widest opacity-50">
+                    <a href="#">Privacy</a><span class="text-slate-800">/</span><a href="#">Terms</a>
                 </div>
             </div>
         </div>
 
-        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 relative z-10">
-            <p class="text-slate-600 text-[10px] font-body leading-relaxed mb-8 max-w-4xl opacity-50">
-                Air Medical 24X7 provides air ambulance service in India, air ambulance cost India, air ambulance
-                service in Delhi, air ambulance Chennai, air ambulance Guwahati to Delhi, air ambulance Ranchi to Delhi,
-                medical evacuation India, air ambulance companies in India, best air ambulance in India, air ambulance
-                near me, ambulance service India.
-            </p>
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-slate-500 text-xs font-label antialiased">© 2024 Air Medical India. Clinical Precision &
-                    Aviation Excellence.</p>
-                <div class="flex items-center gap-2 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                    <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                    International Response Ready
-                </div>
+        <div
+            class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-slate-500 text-[10px] font-label">© 2024 Air Medical India. Aviation Excellence.</p>
+            <div class="flex items-center gap-2 text-[9px] text-slate-500 font-bold uppercase tracking-widest">
+                <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>International Response Ready
             </div>
         </div>
     </footer>
 
+
     <script src="script.js"></script>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919217710155" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <a href="https://wa.me/919217710155?text=I%20need%20an%20Emergency%20Air%20Ambulance.%20Please%20help."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
         <div class="whatsapp-pulse"></div>
         <svg viewBox="0 0 24 24">
             <path

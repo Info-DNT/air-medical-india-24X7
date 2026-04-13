@@ -1,0 +1,7 @@
+# Git Ignore
+.gemini/
+.idea/
+.vscode/
+node_modules/
+*.log
+.DS_Store

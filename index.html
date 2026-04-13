@@ -1,0 +1,694 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Air Ambulance Service in India | Air Medical India</title>
+    <meta name="description"
+        content="Air Medical India offers the best air ambulance service in India. Affordable air ambulance cost, 24/7 emergency dispatch, ICU-equipped aircraft across Delhi, Mumbai, Bangalore & 22+ cities." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed": "#00201c",
+                        "primary-fixed-dim": "#a0c9ff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e1e3e4",
+                        "outline-variant": "#c2c7d1",
+                        "inverse-primary": "#a0c9ff",
+                        "on-background": "#191c1d",
+                        "on-secondary-fixed-variant": "#92001c",
+                        "surface-container-high": "#e7e8e9",
+                        "on-surface-variant": "#42474f",
+                        "primary-fixed": "#d2e4ff",
+                        "secondary-fixed": "#ffdad8",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "tertiary": "#003b34",
+                        "secondary": "#b7102a",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#410007",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb3b1",
+                        "secondary-container": "#db313f",
+                        "surface": "#f8f9fa",
+                        "outline": "#727780",
+                        "on-surface": "#191c1d",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed-variant": "#07497d",
+                        "background": "#f8f9fa",
+                        "primary": "#00355f",
+                        "surface-tint": "#2d6197",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-tertiary-fixed-variant": "#005048",
+                        "on-secondary-container": "#fffbff",
+                        "surface-dim": "#d9dadb",
+                        "on-primary-container": "#8ebdf9",
+                        "inverse-surface": "#2e3132",
+                        "tertiary-fixed-dim": "#6fd8c8",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#8cf5e4",
+                        "on-tertiary-container": "#61cbbc",
+                        "surface-container": "#edeeef",
+                        "tertiary-container": "#00544b",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#f8f9fa",
+                        "primary-container": "#0f4c81",
+                        "on-primary-fixed": "#001c37"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    fontFamily: {
+                        headline: ["Manrope"],
+                        body: ["Public Sans"],
+                        label: ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-secondary selection:text-white">
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-primary/95 z-50 translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center justify-center space-y-8">
+        <button id="close-menu" class="absolute top-6 right-6 text-white">
+            <span class="material-symbols-outlined text-4xl">close</span>
+        </button>
+        <a href="#" class="text-white text-2xl font-headline font-bold uppercase tracking-wider">Services</a>
+        <a href="#" class="text-white text-2xl font-headline font-bold uppercase tracking-wider">Coverage</a>
+        <a href="#" class="text-white text-2xl font-headline font-bold uppercase tracking-wider">Hospitals</a>
+        <a href="#" class="text-white text-2xl font-headline font-bold uppercase tracking-wider">Fleet</a>
+        <a href="#" class="text-white text-2xl font-headline font-bold uppercase tracking-wider">About</a>
+        <button
+            class="bg-secondary text-white px-8 py-4 rounded-lg font-headline font-bold uppercase tracking-widest mt-4">
+            Emergency Hotline
+        </button>
+    </div>
+
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-40 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-[0_16px_32px_rgba(0,53,95,0.06)] transition-all duration-300"
+        id="navbar">
+        <div class="flex justify-between items-center w-full px-6 md:px-8 py-4 max-w-full">
+            <div class="flex items-center gap-3 animate-fade-in-left">
+                <img src="assets/air-medical-logo.png" alt="Air Medical India – Best Air Ambulance Service in India"
+                    class="h-10 md:h-12 w-auto object-contain" />
+                <div
+                    class="hidden sm:block text-xl font-black text-blue-900 dark:text-white tracking-tighter uppercase font-headline">
+                    Air Medical India
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-primary p-2">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+
+            <div class="hidden md:flex items-center space-x-12 animate-fade-in-down">
+                <a class="text-blue-900 dark:text-blue-400 border-b-2 border-red-600 pb-1 font-headline uppercase tracking-wider text-xs font-bold transition-all duration-300 hover:opacity-80"
+                    href="#">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 font-headline uppercase tracking-wider text-xs font-bold transition-all duration-300 hover:opacity-80"
+                    href="#">Coverage</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 font-headline uppercase tracking-wider text-xs font-bold transition-all duration-300 hover:opacity-80"
+                    href="#">Hospitals</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 font-headline uppercase tracking-wider text-xs font-bold transition-all duration-300 hover:opacity-80"
+                    href="#">Fleet</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 font-headline uppercase tracking-wider text-xs font-bold transition-all duration-300 hover:opacity-80"
+                    href="#">About</a>
+            </div>
+            <button
+                class="hidden md:block bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-headline font-extrabold uppercase tracking-widest text-[10px] scale-95 duration-200 ease-in-out hover:shadow-lg hover:shadow-secondary/20 border-b-2 border-transparent hover:border-white/20 hover:scale-100 animate-pulse-subtle">
+                Emergency Hotline
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-[921px] flex items-center pt-24 overflow-hidden bg-primary-container">
+        <div class="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1516513813944-1ccdadad3cb1?q=80&w=2000')] bg-cover bg-center mix-blend-overlay parallax-bg"
+            data-alt="dramatic aerial view of a medical transport helicopter flying over mountains at twilight with cinematic lighting">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-transparent"></div>
+
+        <div class="relative container mx-auto px-6 md:px-8 z-10 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 stagger-children">
+                <div
+                    class="inline-flex items-center gap-3 bg-secondary px-4 py-1.5 rounded-full text-white font-bold text-xs tracking-tighter mb-8 pulse-motif animate-fade-in-up">
+                    <span class="material-symbols-outlined text-sm"
+                        style="font-variation-settings: 'FILL' 1;">emergency</span>
+                    BEST AIR AMBULANCE SERVICE IN INDIA — ACTIVE 24/7
+                </div>
+                <h1
+                    class="font-headline text-5xl md:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-8 animate-fade-in-up delay-100">
+                    Every Second <span class="text-secondary">Defines</span> Survival.
+                </h1>
+                <p
+                    class="text-primary-fixed-dim text-lg md:text-xl max-w-xl mb-10 leading-relaxed font-body font-light animate-fade-in-up delay-200">
+                    India's premier air ambulance service near you. Deploying ICU-grade aviation assets within
+                    minutes for life-critical transfers across Delhi, Mumbai, Bangalore and 22+ cities nationwide.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 animate-fade-in-up delay-300">
+                    <button
+                        class="group bg-white text-primary px-10 py-5 rounded-lg font-headline font-bold text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 active:translate-y-0">
+                        Request Dispatch
+                        <span
+                            class="material-symbols-outlined inline-block ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </button>
+                    <button
+                        class="border border-white/30 text-white backdrop-blur-md px-10 py-5 rounded-lg font-headline font-bold text-sm uppercase tracking-widest hover:bg-white/10 transition-all hover:border-white/60">
+                        View Air Ambulance Cost & Fleet
+                    </button>
+                </div>
+            </div>
+
+            <div class="hidden md:block md:col-span-5 relative animate-fade-in-left delay-500">
+                <div
+                    class="bg-surface-container-lowest/10 backdrop-blur-2xl border border-white/10 p-8 rounded-2xl shadow-2xl hover:scale-[1.02] transition-transform duration-500">
+                    <div class="flex justify-between items-end mb-8 border-b border-white/10 pb-4">
+                        <div>
+                            <p class="text-primary-fixed-dim text-xs uppercase tracking-widest font-bold">Current
+                                Readiness</p>
+                            <p class="text-3xl font-headline font-extrabold text-white counter" data-target="99.8">0</p>
+                        </div>
+                        <span
+                            class="material-symbols-outlined text-tertiary-fixed text-4xl animate-pulse">check_circle</span>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 status-item opacity-0 animate-slide-in-right"
+                            style="animation-delay: 600ms; animation-fill-mode: forwards;">
+                            <div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+                            <p class="text-white text-sm font-medium">Delhi Air Ambulance Hub: 2 Aircraft Standing By
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 status-item opacity-0 animate-slide-in-right"
+                            style="animation-delay: 800ms; animation-fill-mode: forwards;">
+                            <div class="w-2 h-2 rounded-full bg-secondary animate-pulse"></div>
+                            <p class="text-white text-sm font-medium">Mumbai Hub: ICU Team Ready</p>
+                        </div>
+                        <div class="flex items-center gap-4 opacity-50 status-item opacity-0 animate-slide-in-right"
+                            style="animation-delay: 1000ms; animation-fill-mode: forwards;">
+                            <div class="w-2 h-2 rounded-full bg-white animate-pulse"></div>
+                            <p class="text-white text-sm font-medium">Bengaluru Hub: Mission in Progress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative Diagonal -->
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-background diagonal-bg"></div>
+    </header>
+
+    <!-- Quotation Form Section -->
+    <section class="py-24 bg-white relative scroll-reveal">
+        <div class="container mx-auto px-6 md:px-8">
+            <div
+                class="max-w-4xl mx-auto bg-surface-container-lowest rounded-2xl shadow-[0_32px_64px_rgba(0,53,95,0.08)] overflow-hidden border border-outline-variant/10 hover:shadow-[0_32px_80px_rgba(0,53,95,0.12)] transition-shadow duration-500">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <!-- Visual/Info Side -->
+                    <div class="bg-primary p-12 text-white flex flex-col justify-center relative overflow-hidden group">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-primary to-primary-container opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                        </div>
+                        <div class="relative z-10">
+                            <div
+                                class="inline-flex items-center gap-2 bg-secondary/20 text-secondary-fixed-dim px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-6 border border-secondary/30 animate-pulse">
+                                <span class="w-1.5 h-1.5 bg-secondary rounded-full"></span>
+                                Priority Dispatch
+                            </div>
+                            <h2 class="font-headline text-4xl font-extrabold leading-tight mb-6 scroll-reveal-text">
+                                Get Air Ambulance Cost & Instant Quote</h2>
+                            <p
+                                class="text-primary-fixed-dim font-light leading-relaxed mb-8 scroll-reveal-text delay-100">
+                                Request a transparent air ambulance price in India for your specific route and medical
+                                requirement. Our dispatchers monitor these requests 24/7 and respond within 15 minutes.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-4 scroll-reveal-text delay-200">
+                                    <span class="material-symbols-outlined text-secondary">verified</span>
+                                    <span class="text-sm font-bold">15-Min Response Guarantee</span>
+                                </div>
+                                <div class="flex items-center gap-4 scroll-reveal-text delay-300">
+                                    <span class="material-symbols-outlined text-secondary">medical_services</span>
+                                    <span class="text-sm font-bold">Clinical Team Pre-Allocation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -bottom-10 -right-10 opacity-10 group-hover:opacity-20 transition-opacity duration-500 group-hover:scale-110 transform">
+                            <span class="material-symbols-outlined text-[200px]">support_agent</span>
+                        </div>
+                    </div>
+
+                    <!-- Form Side -->
+                    <div class="p-8 md:p-12 scroll-reveal-form">
+                        <h3 class="font-headline text-2xl font-extrabold text-primary mb-8 flex items-center gap-3">
+                            Check Air Ambulance Price — Free Quote
+                        </h3>
+                        <form class="space-y-6" id="quote-form">
+                            <div class="form-field opacity-0 translate-y-4">
+                                <label
+                                    class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Full
+                                    Name</label>
+                                <input
+                                    class="w-full px-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm placeholder:text-outline hover:bg-surface-container-high"
+                                    placeholder="Enter your name" type="text" required />
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="form-field opacity-0 translate-y-4 delay-100">
+                                    <label
+                                        class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Phone
+                                        Number</label>
+                                    <div class="relative">
+                                        <span
+                                            class="absolute left-4 top-1/2 -translate-y-1/2 text-outline text-sm font-bold">+91</span>
+                                        <input
+                                            class="w-full pl-12 pr-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm placeholder:text-outline hover:bg-surface-container-high"
+                                            placeholder="Enter your phone number" type="tel" required />
+                                    </div>
+                                </div>
+                                <div class="form-field opacity-0 translate-y-4 delay-200">
+                                    <label
+                                        class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Email
+                                        Address</label>
+                                    <input
+                                        class="w-full px-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm placeholder:text-outline hover:bg-surface-container-high"
+                                        placeholder="Enter your email" type="email" required />
+                                </div>
+                            </div>
+                            <div class="form-field opacity-0 translate-y-4 delay-300">
+                                <label
+                                    class="block text-[10px] font-black uppercase tracking-widest text-on-surface-variant mb-2">Required
+                                    Air Ambulance Service</label>
+                                <select
+                                    class="w-full px-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm appearance-none cursor-pointer hover:bg-surface-container-high"
+                                    required>
+                                    <option value="">Select a Service</option>
+                                    <option>Air Ambulance Service (ICU)</option>
+                                    <option>Commercial Stretcher Service</option>
+                                    <option>Organ Transplant Logistics</option>
+                                    <option>Neonatal Transport (NICU)</option>
+                                    <option>International Repatriation</option>
+                                </select>
+                            </div>
+                            <div class="pt-4 form-field opacity-0 translate-y-4 delay-400">
+                                <button
+                                    class="w-full bg-secondary text-white py-5 rounded-lg font-headline font-black uppercase tracking-[0.2em] text-xs hover:bg-primary transition-all duration-300 shadow-xl shadow-secondary/20 pulse-motif relative overflow-hidden group"
+                                    type="submit">
+                                    <span class="relative z-10">Get Free Air Ambulance Quote</span>
+                                    <div
+                                        class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-24 bg-background">
+        <div class="container mx-auto px-6 md:px-8">
+            <div class="mb-20 flex flex-col md:flex-row justify-between items-end gap-8 scroll-reveal">
+                <div class="max-w-2xl">
+                    <h2 class="font-headline text-4xl font-extrabold text-primary mb-4 tracking-tight">Air Ambulance
+                        Services in India</h2>
+                    <p class="text-on-surface-variant font-body leading-relaxed">High-precision air ambulance and
+                        medical logistics
+                        integrated with clinical excellence across all major cities.</p>
+                </div>
+                <div class="h-0.5 flex-grow mx-8 bg-surface-container-high hidden md:block"></div>
+                <div class="text-secondary font-headline font-black text-6xl opacity-10 animate-pulse-slow">06</div>
+            </div>
+
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-outline-variant/20 rounded-xl overflow-hidden shadow-sm">
+                <!-- Service 1 -->
+                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
+                    data-index="0">
+                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
+                        data-weight="fill">helicopter</span>
+                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Aero-Medical Evacuation</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Bed-to-bed air ambulance transfers
+                        with continuous
+                        ICU monitoring across the subcontinent. Available as air ambulance service near me in all major
+                        cities.</p>
+                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
+                        href="#">
+                        Explore Protocols <span
+                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
+                    data-index="1">
+                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
+                        data-weight="fill">cardiology</span>
+                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Cardiac Life Support</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Advanced life-support systems
+                        (ECMO/IABP) specialized for high-altitude transport. Our cardiac air ambulance service in India
+                        operates 24/7.</p>
+                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
+                        href="#">
+                        Explore Protocols <span
+                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
+                    data-index="2">
+                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
+                        data-weight="fill">child_care</span>
+                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Neonatal Care (NICU)</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Incubator-equipped air ambulance
+                        transport for
+                        critical pediatric and neonatal emergencies across India.</p>
+                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
+                        href="#">
+                        Explore Protocols <span
+                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
+                    data-index="3">
+                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
+                        data-weight="fill">radiology</span>
+                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Trauma Rapid Response</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Immediate air ambulance extraction
+                        from accident
+                        sites with pre-hospital neuro-stabilization. Fastest ambulance service in Delhi and nationwide.
+                    </p>
+                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
+                        href="#">
+                        Explore Protocols <span
+                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
+                    data-index="4">
+                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
+                        data-weight="fill">respiratory_rate</span>
+                    <h3 class="font-headline text-xl font-bold text-primary mb-4">Organ Transplant Logistics</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Time-critical organ and surgical
+                        team transport via air ambulance in India with green-corridor priority across all states.</p>
+                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
+                        href="#">
+                        Explore Protocols <span
+                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card bg-surface-container-lowest p-10 hover:bg-surface-container-low transition-all duration-500 group relative cursor-pointer"
+                    data-index="5">
+                    <div class="card-accent absolute top-0 left-0 w-1 h-0 bg-secondary transition-all duration-300">
+                    </div>
+                    <span
+                        class="material-symbols-outlined text-4xl text-outline mb-8 group-hover:text-secondary transition-colors duration-300 service-icon"
+                        data-weight="fill">public</span>
+                    <h3 class="font-headline text-xl font-bold text-primary mb-4">International Repatriation</h3>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-8">Global medical coordination and
+                        commercial airline medical escorts. Competitive air ambulance cost for international transfers.
+                    </p>
+                    <a class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-secondary hover:translate-x-2 transition-transform"
+                        href="#">
+                        Explore Protocols <span
+                            class="material-symbols-outlined text-sm ml-2 transition-transform group-hover:translate-x-1">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us (Asymmetrical Layout) -->
+    <section class="py-24 bg-surface-container-low relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="relative scroll-reveal-left">
+                    <div
+                        class="aspect-[4/5] bg-primary rounded-lg overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 group">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            data-alt="close up of sophisticated medical monitoring equipment inside a high-tech ambulance interior with blue ambient lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAai-AGn8bz3wxyZZoONuvjgnLEcG1mIexIw_jqBv2iFSFVdiezlaqO1fTpjsURaQYi893FghK41rsDNmwn9w1ktIrubhPdrXbm308-cPXPRxLFBEABMP6qjOqsc8yxLvRWOuB9NYqdaKu2ASMPPm1tDACNFWK-6zsk5h4IJMkoaxEss50KUvBTSlDXFCgYAK_qAxE0S_H0JvdXYHBZZZ2MdLQn6GY67bYtNOFqjm38VaZHtUCOZCu0_O-mnZmdgWxpa6kYg4iiOSaW" />
+                    </div>
+                    <div
+                        class="absolute -bottom-10 -right-10 w-2/3 aspect-square bg-surface-container-lowest rounded-lg p-10 shadow-xl -rotate-3 border border-outline-variant/10 hidden md:block hover:rotate-0 transition-transform duration-500 hover:shadow-2xl scroll-reveal-up delay-200">
+                        <span
+                            class="material-symbols-outlined text-secondary text-5xl mb-6 animate-bounce-subtle">workspace_premium</span>
+                        <h4 class="font-headline text-2xl font-black text-primary mb-2">ISO 9001:2015</h4>
+                        <p class="text-on-surface-variant text-sm font-body italic">Certified Quality — Best Air
+                            Ambulance Service in India</p>
+                    </div>
+                </div>
+
+                <div class="scroll-reveal-right">
+                    <h2 class="font-headline text-4xl font-extrabold text-primary mb-8 leading-tight">Why We're India's
+                        Best Air Ambulance Service</h2>
+                    <div class="space-y-12">
+                        <div class="feature-item flex gap-6 opacity-0 translate-x-8" data-index="0">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-primary text-white flex items-center justify-center rounded font-headline font-bold hover:scale-110 transition-transform duration-300 shadow-lg">
+                                01</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Zero-Error Readiness</h4>
+                                <p class="text-on-surface-variant leading-relaxed">Our clinical teams undergo 500+ hours
+                                    of annual aerospace medicine simulation to ensure peak performance under pressure.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item flex gap-6 opacity-0 translate-x-8" data-index="1">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-secondary text-white flex items-center justify-center rounded font-headline font-bold hover:scale-110 transition-transform duration-300 shadow-lg shadow-secondary/30">
+                                02</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Transparent Air Ambulance Cost in India</h4>
+                                <p class="text-on-surface-variant leading-relaxed">From Pilatus PC-12 for remote
+                                    airstrips to Beechcraft King Air 200 for trans-continental hauls — clear air
+                                    ambulance pricing with no hidden fees for every mission profile.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item flex gap-6 opacity-0 translate-x-8" data-index="2">
+                            <div
+                                class="flex-shrink-0 w-12 h-12 bg-tertiary text-white flex items-center justify-center rounded font-headline font-bold hover:scale-110 transition-transform duration-300 shadow-lg shadow-tertiary/30">
+                                03</div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Medical First Philosophy</h4>
+                                <p class="text-on-surface-variant leading-relaxed">Pilots and Doctors work in
+                                    synchronized command. Safety is never compromised for speed, yet we operate the
+                                    fastest air ambulance service in India.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Texture -->
+        <div
+            class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-high/30 -skew-x-12 translate-x-1/2 pointer-events-none">
+        </div>
+    </section>
+
+    <!-- Coverage Map Section -->
+    <section class="py-24 bg-surface-dim relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
+                <h2 class="font-headline text-4xl font-extrabold text-primary mb-4 uppercase tracking-tighter">Air
+                    Ambulance Coverage Across India</h2>
+                <p class="text-on-surface-variant">Strategic hub placement ensures sub-60 minute air ambulance response
+                    time for 85%
+                    of India's population — including air ambulance service in Delhi, Mumbai, Bangalore & Kolkata.</p>
+            </div>
+
+            <div
+                class="relative bg-surface-container-low rounded-2xl p-4 md:p-12 shadow-inner border border-outline-variant/10 scroll-reveal-scale">
+                <div class="aspect-[16/9] w-full bg-[#e1e3e4] rounded-lg overflow-hidden relative group">
+                    <!-- Placeholder for Map Visualization using Tonal Colors -->
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-20 group-hover:opacity-30 transition-opacity duration-500">
+                        <span class="material-symbols-outlined text-[300px] animate-pulse-slow">map</span>
+                    </div>
+
+                    <!-- Hub Markers -->
+                    <div class="absolute top-[25%] left-[45%] pulse-motif map-marker" data-city="Delhi">
+                        <div
+                            class="w-4 h-4 bg-secondary rounded-full shadow-lg cursor-pointer hover:scale-150 transition-transform">
+                        </div>
+                        <div
+                            class="absolute top-6 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold whitespace-nowrap opacity-0 translate-y-2 transition-all duration-300 pointer-events-none">
+                            DELHI AIR AMBULANCE HUB (Primary)</div>
+                    </div>
+
+                    <div class="absolute top-[60%] left-[35%] map-marker" data-city="Mumbai">
+                        <div
+                            class="w-3 h-3 bg-secondary rounded-full shadow-lg cursor-pointer hover:scale-150 transition-transform">
+                        </div>
+                        <div
+                            class="absolute top-4 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold whitespace-nowrap opacity-0 translate-y-2 transition-all duration-300 pointer-events-none">
+                            MUMBAI AIR AMBULANCE HUB</div>
+                    </div>
+
+                    <div class="absolute top-[80%] left-[48%] map-marker" data-city="Bangalore">
+                        <div
+                            class="w-3 h-3 bg-secondary rounded-full shadow-lg cursor-pointer hover:scale-150 transition-transform">
+                        </div>
+                        <div
+                            class="absolute top-4 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold whitespace-nowrap opacity-0 translate-y-2 transition-all duration-300 pointer-events-none">
+                            BENGALURU AIR AMBULANCE HUB</div>
+                    </div>
+
+                    <div class="absolute top-[45%] left-[70%] map-marker" data-city="Kolkata">
+                        <div
+                            class="w-3 h-3 bg-secondary rounded-full shadow-lg cursor-pointer hover:scale-150 transition-transform">
+                        </div>
+                        <div
+                            class="absolute top-4 left-1/2 -translate-x-1/2 bg-white px-2 py-1 rounded shadow-sm text-[10px] font-bold whitespace-nowrap opacity-0 translate-y-2 transition-all duration-300 pointer-events-none">
+                            KOLKATA AIR AMBULANCE HUB</div>
+                    </div>
+                </div>
+
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center stat-item opacity-0 translate-y-4" data-index="0">
+                        <p class="text-secondary font-black text-3xl counter" data-target="4">0</p>
+                        <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mt-1">Main Hubs
+                        </p>
+                    </div>
+                    <div class="text-center stat-item opacity-0 translate-y-4" data-index="1">
+                        <p class="text-primary font-black text-3xl counter" data-target="22">0</p>
+                        <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mt-1">Partner
+                            Cities</p>
+                    </div>
+                    <div class="text-center stat-item opacity-0 translate-y-4" data-index="2">
+                        <p class="text-primary font-black text-3xl counter" data-target="350">0</p>
+                        <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mt-1">Hospital
+                            Tie-ups</p>
+                    </div>
+                    <div class="text-center stat-item opacity-0 translate-y-4" data-index="3">
+                        <p class="text-tertiary font-black text-3xl counter" data-target="12000" data-suffix="+">0</p>
+                        <p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mt-1">Lives Saved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#001c37] text-white py-16 px-6 md:px-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-t from-secondary/5 to-transparent pointer-events-none"></div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto relative z-10">
+            <div class="md:col-span-1 scroll-reveal-up">
+                <div class="flex items-center gap-3 mb-4 group cursor-pointer">
+                    <img src="assets/air-medical-logo.png" alt="Air Medical India – Air Ambulance Service in India"
+                        class="h-8 w-auto object-contain brightness-0 invert" />
+                    <span
+                        class="text-2xl font-bold text-white tracking-tighter font-headline uppercase group-hover:text-secondary transition-colors">
+                        Air Medical India
+                    </span>
+                </div>
+                <p class="text-slate-400 text-sm mb-8 leading-relaxed">India's best air ambulance service. Affordable
+                    air ambulance cost, ISO-certified clinical teams, and aviation excellence across 22+ cities.</p>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-secondary/30"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">share</span>
+                    </a>
+                    <a class="w-10 h-10 rounded bg-white/5 flex items-center justify-center hover:bg-secondary transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-secondary/30"
+                        href="#">
+                        <span class="material-symbols-outlined text-sm">public</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:col-span-1 scroll-reveal-up delay-100">
+                <h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6 text-slate-500">Navigation</h5>
+                <ul class="space-y-4">
+                    <li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block text-sm hover:text-secondary"
+                            href="#">Air Ambulance Services</a></li>
+                    <li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block text-sm hover:text-secondary"
+                            href="#">Fleet Details</a></li>
+                    <li><a class="text-slate-400 hover:text-white transition-all hover:translate-x-1 inline-block text-sm hover:text-secondary"
+                            href="#">Hospital Network</a></li>
+                    <li><a class="text-teal-400 font-semibold text-sm hover:translate-x-1 inline-block transition-transform"
+                            href="#">Accreditations</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2 scroll-reveal-up delay-200">
+                <h5 class="text-xs font-black uppercase tracking-[0.2em] mb-6 text-slate-500">Emergency Air Ambulance
+                    Dispatch</h5>
+                <p
+                    class="font-headline text-4xl md:text-5xl font-black text-white mb-8 hover:text-secondary transition-colors cursor-pointer tracking-tighter group">
+                    +91 800 123 4567
+                    <span class="block h-1 w-0 bg-secondary group-hover:w-full transition-all duration-500 mt-2"></span>
+                </p>
+                <div class="flex flex-wrap gap-4 text-sm">
+                    <a class="text-slate-400 hover:text-white transition-colors" href="#">Privacy Policy</a>
+                    <span class="text-slate-700">•</span>
+                    <a class="text-slate-400 hover:text-white transition-colors" href="#">Terms of Service</a>
+                    <span class="text-slate-700">•</span>
+                    <a class="text-slate-400 hover:text-white transition-colors" href="#">Career</a>
+                    <span class="text-slate-700">•</span>
+                    <a class="text-slate-400 hover:text-white transition-colors" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 relative z-10">
+            <p class="text-slate-500 text-xs font-label antialiased">© 2024 Air Medical India. Best Air Ambulance
+                Service in India — Clinical Precision & Editorial Grace.</p>
+            <div class="flex items-center gap-2 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                Systems Online / Air Ambulance Dispatch Ready
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

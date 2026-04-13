@@ -106,32 +106,33 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     }, { passive: true });
 
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu');
-    const mobileMenu = document.getElementById('mobile-menu');
+    // Mobile Menu logic removed - Navigation simplified to single button
+    
+    // Testimonial Carousel Logic
+    const carousel = document.getElementById('testimonial-carousel');
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const dots = document.querySelectorAll('.carousel-dot');
 
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-full');
-            document.body.style.overflow = 'hidden';
+    if (carousel && nextBtn && prevBtn) {
+        const scrollAmount = 400;
+
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        // Sync dots on scroll
+        carousel.addEventListener('scroll', () => {
+            const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
         });
     }
-
-    if (closeMenuBtn && mobileMenu) {
-        closeMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-            document.body.style.overflow = '';
-        });
-    }
-
-    // Close mobile menu when clicking links
-    mobileMenu?.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-            document.body.style.overflow = '';
-        });
-    });
 
     // Service Card Interactions
     const serviceCards = document.querySelectorAll('.service-card');
@@ -151,7 +152,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form Handling
+    // FAQ Accordion Logic
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const button = item.querySelector('button');
+        const answer = item.querySelector('.faq-answer');
+
+        button.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+                answer?.classList.remove('hidden');
+            }
+        });
+    });
+
+    // Map section removed - marker logic deleted
+
+    // Form Handling - Reverted to Custom Form with Redirect
     const quoteForm = document.getElementById('quote-form');
     if (quoteForm) {
         quoteForm.addEventListener('submit', (e) => {
@@ -163,42 +189,13 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.innerHTML = '<span class="relative z-10">Processing...</span>';
             submitBtn.disabled = true;
 
-            // Simulate form submission
+            // Simulate form submission and redirect
             setTimeout(() => {
-                submitBtn.innerHTML = '<span class="relative z-10">Request Sent!</span>';
-                submitBtn.classList.remove('bg-secondary');
-                submitBtn.classList.add('bg-tertiary');
-
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                    submitBtn.classList.add('bg-secondary');
-                    submitBtn.classList.remove('bg-tertiary');
-                    quoteForm.reset();
-                }, 2000);
-            }, 1500);
+                // Redirect to Thank You page
+                window.location.href = 'thank-you.html';
+            }, 1000);
         });
     }
-
-    // Map Marker Interactions
-    const mapMarkers = document.querySelectorAll('.map-marker');
-    mapMarkers.forEach(marker => {
-        marker.addEventListener('mouseenter', () => {
-            const label = marker.querySelector('div:last-child');
-            if (label) {
-                label.style.opacity = '1';
-                label.style.transform = 'translateX(-50%) translateY(0)';
-            }
-        });
-
-        marker.addEventListener('mouseleave', () => {
-            const label = marker.querySelector('div:last-child');
-            if (label) {
-                label.style.opacity = '0';
-                label.style.transform = 'translateX(-50%) translateY(8px)';
-            }
-        });
-    });
 
     // Emergency Button Pulse Effect on Click
     const emergencyBtns = document.querySelectorAll('button');
@@ -251,6 +248,42 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.classList.remove('animations-paused');
         }
     });
+
+    // Counter Animation for Global Network Section
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const animateStats = () => {
+        statNumbers.forEach(stat => {
+            const target = +stat.getAttribute('data-target');
+            const speed = 100; // Lower is faster
+            
+            const updateCount = () => {
+                const count = +stat.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    stat.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 15);
+                } else {
+                    stat.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateStats();
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const statsSection = document.querySelector('.stat-number')?.closest('section');
+    if (statsSection) {
+        statsObserver.observe(statsSection);
+    }
 
     console.log('Air Medical India - Emergency Response System Initialized');
 });

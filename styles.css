@@ -179,14 +179,25 @@
 .service-card,
 .feature-item,
 .stat-item,
+.scroll-reveal-form,
 .form-field {
     opacity: 0;
     transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.scroll-reveal.visible {
+.scroll-reveal.visible,
+.scroll-reveal-text.visible,
+.scroll-reveal-left.visible,
+.scroll-reveal-right.visible,
+.scroll-reveal-up.visible,
+.scroll-reveal-scale.visible,
+.scroll-reveal-form.visible,
+.service-card.visible,
+.feature-item.visible,
+.stat-item.visible,
+.form-field.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0) scale(1);
 }
 
 .scroll-reveal {
@@ -471,10 +482,10 @@ img[src] {
 /* WhatsApp Floating Button */
 .whatsapp-float {
     position: fixed;
-    bottom: 40px;
+    bottom: 80px;
     right: 40px;
-    width: 60px;
-    height: 60px;
+    width: 64px;
+    height: 64px;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
@@ -496,8 +507,8 @@ img[src] {
 }
 
 .whatsapp-float svg {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     fill: currentColor;
 }
 
@@ -525,14 +536,14 @@ img[src] {
 
 @media (max-width: 768px) {
     .whatsapp-float {
-        bottom: 20px;
+        bottom: 40px;
         right: 20px;
-        width: 55px;
-        height: 55px;
+        width: 58px;
+        height: 58px;
     }
     .whatsapp-float svg {
-        width: 28px;
-        height: 28px;
+        width: 30px;
+        height: 30px;
     }
 }
 

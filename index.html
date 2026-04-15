@@ -95,10 +95,11 @@
     <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_16px_32px_rgba(0,53,95,0.06)] border-b border-primary/5 transition-all duration-300"
         id="navbar">
         <div class="container mx-auto px-4 md:px-8 flex justify-between items-center h-16 md:h-20">
-            <div class="flex items-center animate-fade-in-left">
+            <a href="https://www.airmedical24x7.com/"
+                class="flex items-center animate-fade-in-left cursor-pointer hover:opacity-80 transition-opacity">
                 <img src="assets/air-medical-logo.png" alt="Air Medical India – Best Air Ambulance Service in India"
                     class="h-9 md:h-14 w-auto object-contain" />
-            </div>
+            </a>
 
             <div class="flex items-center animate-fade-in-down">
                 <!-- Mobile & Desktop Persistent Emergency Button -->
@@ -120,7 +121,7 @@
             <div
                 class="inline-flex items-center gap-3 bg-slate-950/60 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full text-white/90 font-bold text-[9px] md:text-[10px] uppercase tracking-[0.2em] mb-8 animate-fade-in-up mx-auto md:mx-0">
                 <div class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></div>
-                Available 24/7/365 — BEST AIR AMBULANCE SERVICE IN INDIA
+                AVAILABLE 24/7/365 — BEST AIR AMBULANCE SERVICE IN INDIA & UAE
             </div>
             <h1
                 class="font-headline text-4xl md:text-5xl lg:text-6xl font-black text-white mb-5 leading-[1] tracking-tighter animate-fade-in-up delay-100 uppercase">
@@ -218,7 +219,7 @@
                         </div>
                         <div class="relative z-10">
                             <h2 class="font-headline text-xl font-extrabold leading-tight mb-5 scroll-reveal-text">
-                                Rapid Air Ambulance Dispatch — 3 Easy Steps</h2>
+                                Rapid Air Ambulance Dispatch In 3 Easy Steps</h2>
 
                             <div class="space-y-5">
                                 <!-- Step 1 -->
@@ -267,7 +268,7 @@
                     <!-- Form Side -->
                     <div class="p-8 md:p-12 scroll-reveal-form">
                         <h3 class="font-headline text-2xl font-extrabold text-primary mb-8 flex items-center gap-3">
-                            Check Air Ambulance Price — Free Quote
+                            Get a Free Quotation
                         </h3>
                         <form class="space-y-6" id="quote-form">
                             <div class="animate-fade-in-up delay-100">
@@ -276,8 +277,8 @@
                                     Name</label>
                                 <input type="text" name="name" required
                                     oninput="this.value = this.value.replace(/[0-9]/g, '')"
-                                    class="w-full bg-surface-dim border-none rounded-xl px-6 py-4 text-primary font-body placeholder:text-primary/20 focus:ring-2 focus:ring-secondary/20 transition-all"
-                                    placeholder="Enter your name">
+                                    class="w-full bg-gray-100 border border-gray-200 rounded-xl px-5 py-3.5 text-primary font-body text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary/40 focus:bg-white transition-all"
+                                    placeholder="Enter your full name">
                             </div>
 
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -287,16 +288,16 @@
                                         Number</label>
                                     <input type="tel" name="phone" required
                                         oninput="this.value = this.value.replace(/[^0-9+]/g, '')"
-                                        class="w-full bg-surface-dim border-none rounded-xl px-6 py-4 text-primary font-body placeholder:text-primary/20 focus:ring-2 focus:ring-secondary/20 transition-all"
-                                        placeholder="+91 Enter your num">
+                                        class="w-full bg-gray-100 border border-gray-200 rounded-xl px-5 py-3.5 text-primary font-body text-[11.5px] placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary/40 focus:bg-white transition-all"
+                                        placeholder="+91 Enter your number">
                                 </div>
                                 <div class="animate-fade-in-up delay-300">
                                     <label
                                         class="block text-[10px] font-black uppercase tracking-widest text-primary/40 mb-2">Email
                                         Address</label>
                                     <input type="email" name="email" required
-                                        class="w-full bg-surface-dim border-none rounded-xl px-6 py-4 text-primary font-body placeholder:text-primary/20 focus:ring-2 focus:ring-secondary/20 transition-all"
-                                        placeholder="Enter your email">
+                                        class="w-full bg-gray-100 border border-gray-200 rounded-xl px-5 py-3.5 text-primary font-body text-[12px] placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-secondary/30 focus:border-secondary/40 focus:bg-white transition-all"
+                                        placeholder="Enter your email id">
                                 </div>
                             </div>
                             <div class="form-field opacity-0 translate-y-4 delay-300">
@@ -307,18 +308,24 @@
                                     class="w-full px-4 py-4 bg-surface-container-low border-transparent rounded-lg focus:ring-2 focus:ring-secondary focus:bg-white transition-all font-body text-sm appearance-none cursor-pointer hover:bg-surface-container-high"
                                     name="service" required>
                                     <option value="">Select a Service</option>
-                                    <option>Air Ambulance Service</option>
+                                    <option>Air Ambulance</option>
                                     <option>Commercial Flight Stretcher Service</option>
-                                    <option>Organ Transplant Assistance</option>
                                     <option>Medical Tourism</option>
-                                    <option>Medical Escort</option>
+                                    <option>Flight Medical Escort</option>
+                                    <option>Flight Wheelchair Service</option>
+                                    <option>Private Medical Charter Jet</option>
+                                    <option>Medical Travel Assistance</option>
+                                    <option>Organ Transplant Assistance</option>
+                                    <option>Overseas Medical Tourism</option>
+                                    <option>ECMO Transfer Service</option>
+                                    <option>Home Healthcare Service</option>
                                 </select>
                             </div>
                             <div class="pt-4 form-field opacity-0 translate-y-4 delay-400">
                                 <button
                                     class="w-full bg-secondary text-white py-5 rounded-lg font-headline font-black uppercase tracking-[0.2em] text-xs hover:bg-primary transition-all duration-300 shadow-xl shadow-secondary/20 pulse-motif relative overflow-hidden group"
                                     type="submit">
-                                    <span class="relative z-10">Request Quotation</span>
+                                    <span class="relative z-10">Get a free Quotation</span>
                                     <div
                                         class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                                     </div>
@@ -337,7 +344,7 @@
             <div class="mb-12 flex flex-col md:flex-row justify-between items-end gap-8 scroll-reveal">
                 <div class="max-w-2xl">
                     <h2 class="font-headline text-4xl font-extrabold text-primary mb-4 tracking-tight">Air Ambulance
-                        Services in India</h2>
+                        Service in India & UAE - Medical Evacuation Service</h2>
                     <p class="text-on-surface-variant font-body leading-relaxed">High-precision air ambulance and
                         medical logistics
                         integrated with clinical excellence across all major cities.</p>
@@ -349,10 +356,30 @@
             <div class="relative">
                 <div id="services-carousel"
                     class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-6 pb-8 px-4 -mx-4">
+                    <!-- Medical Evacuation Service -->
+                    <div
+                        class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
+                        <img src="assets/ground_to_air_transfer.png"
+                            class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            alt="Medical Evacuation Service">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 md:pl-10 text-white">
+                            <h3 class="font-headline text-2xl font-bold mb-3">Medical Evacuation Service</h3>
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Full medical evacuation service from
+                                the UAE, Saudi Arabia, the Philippines, and 100+ countries to India. We manage hospital
+                                discharge, customs clearance, flight coordination, and hospital admission end-to-end.
+                            </p>
+                            <a href="https://wa.me/919217710155?text=Quote%20Request:%20Medical%20Evacuation"
+                                class="px-7 py-3 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all shadow-lg inline-block">Get
+                                Quote</a>
+                        </div>
+                    </div>
+
                     <!-- Air Ambulance Charter -->
                     <div
                         class="min-w-[85vw] md:min-w-[400px] snap-center group relative h-[500px] rounded-2xl overflow-hidden cursor-pointer shadow-xl">
-                        <img src="assets/medical_jet_flying_in_sky.png"
+                        <img src="assets\air_ambulance_patient_care.png"
                             class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             alt="Dedicated Medical Jet">
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
@@ -395,7 +422,7 @@
                         </div>
                         <div class="absolute bottom-0 left-0 p-8 md:pl-10 text-white">
                             <h3 class="font-headline text-2xl font-bold mb-3">Clinical Flight Escort</h3>
-                            <p class="text-white/80 text-sm leading-relaxed mb-6">Premium bedside-to-bedside medical
+                            <p class="text-white/80 text-sm leading-relaxed mb-6">Premium bed to bed medical
                                 coordination with specialized doctors and paramedics on scheduled flights.</p>
                             <a href="https://wa.me/919217710155?text=Quote%20Request:%20Medical%20Escort"
                                 class="px-7 py-3 bg-secondary text-white rounded-lg text-[10px] font-black uppercase tracking-widest hover:bg-white hover:text-primary transition-all shadow-lg inline-block">Get
@@ -430,7 +457,7 @@
                         <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent">
                         </div>
                         <div class="absolute bottom-0 left-0 p-8 text-white">
-                            <h3 class="font-headline text-2xl font-bold mb-3">Bedside-to-Bedside Care</h3>
+                            <h3 class="font-headline text-2xl font-bold mb-3">Bed to Bed Transfer</h3>
                             <p class="text-white/80 text-sm leading-relaxed mb-6">Synchronized ICU ground ambulance
                                 transfers at both origin and destination for zero-gap medical continuity.</p>
                             <a href="https://wa.me/919217710155?text=Quote%20Request:%20Ground%20Transfer"
@@ -441,144 +468,166 @@
                 </div>
             </div>
         </div>
-        </sect <!-- Why Us -->
-        <section class="py-16 bg-surface-container-low relative overflow-hidden">
-            <div class="container mx-auto px-6 md:px-8 relative z-10">
+    </section> <!-- Why Us -->
+    <section class="py-16 bg-surface-container-low relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-8 relative z-10">
 
-                <!-- Top Row: Photo + Features -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
+            <!-- Top Row: Photo + Features -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
 
-                    <!-- Photo (smaller, no overlapping card) -->
-                    <div class="scroll-reveal-left">
+                <!-- Photo (smaller, no overlapping card) -->
+                <div class="scroll-reveal-left">
+                    <div
+                        class="aspect-[16/10] bg-primary rounded-xl overflow-hidden shadow-xl hover:shadow-2xl rotate-1 hover:rotate-0 transition-all duration-700 group max-w-xl mx-auto lg:mx-0">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            src="assets/0c32eef91a62c9154059637aa566ccf5.jpg" alt="Air Medical India clinical team" />
+                    </div>
+                </div>
+
+                <!-- Features -->
+                <div class="scroll-reveal-right">
+                    <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 leading-tight">
+                        Why Families Choose Our Air Ambulance Service in India & UAE for Their Most Critical Moments
+                    </h2>
+                    <div class="space-y-7">
+                        <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="0">
+                            <div
+                                class="flex-shrink-0 w-11 h-11 bg-primary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg">
+                                01</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Care that feels personal</h4>
+                                <p class="text-on-surface-variant text-sm leading-relaxed">Every mission we take on
+                                    is someone's parent, child, or loved one. Our teams undergo 500+ hours of
+                                    advanced aerospace medical training each year - so when it matters most, you're
+                                    relying on real expertise, not just claims. 17,000+ families across 100+
+                                    countries have trusted us in moments that truly matter. As India's most trusted
+                                    air ambulance service, we bring that same care to every mission - domestic or
+                                    international.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="1">
+                            <div
+                                class="flex-shrink-0 w-11 h-11 bg-secondary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg shadow-secondary/30">
+                                02</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Clear air ambulance cost in India & UAE</h4>
+                                <p class="text-on-surface-variant text-sm leading-relaxed">In stressful times,
+                                    uncertainty can feel overwhelming. We keep everything clear and simple - from
+                                    hospital discharge and flight coordination to final admission - so you can focus
+                                    on what truly matters: your loved one's recovery.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="2">
+                            <div
+                                class="flex-shrink-0 w-11 h-11 bg-tertiary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg shadow-tertiary/30">
+                                03</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Standards you can rely on</h4>
+                                <p class="text-on-surface-variant text-sm leading-relaxed">When it comes to someone
+                                    close to you, quality isn't a choice - it's a necessity. We are among the very
+                                    few providers in the India–UAE corridor with both CAMTS and ISO 9001:2015
+                                    certifications, ensuring global standards in aircraft, medical teams, and
+                                    patient care.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="2">
+                            <div
+                                class="flex-shrink-0 w-11 h-11 bg-tertiary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg shadow-tertiary/30">
+                                04</div>
+                            <div>
+                                <h4 class="text-lg font-bold mb-1">Stay connected, always</h4>
+                                <p class="text-on-surface-variant text-sm leading-relaxed">We understand how
+                                    difficult it is to be apart during such moments. That's why every air ambulance
+                                    mission includes real-time flight tracking — so you and your family always know
+                                    where your loved one is, every step of the journey. Whether they're flying
+                                    within India or on an international air ambulance from UAE.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Cards — 4-column grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <!-- CAMTS -->
+                <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-[#00357f] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    data-delay="0">
+                    <div class="flex items-center gap-3 mb-3">
                         <div
-                            class="aspect-[16/10] bg-primary rounded-xl overflow-hidden shadow-xl hover:shadow-2xl rotate-1 hover:rotate-0 transition-all duration-700 group max-w-xl mx-auto lg:mx-0">
-                            <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                src="assets/0c32eef91a62c9154059637aa566ccf5.jpg"
-                                alt="Air Medical India clinical team" />
+                            class="w-12 h-12 rounded-lg bg-white shadow-sm flex items-center justify-center flex-shrink-0 p-1.5 border border-primary/5">
+                            <img src="assets/logo/CAMTS_Logo.webp" alt="CAMTS Accredited"
+                                class="w-full h-full object-contain" />
                         </div>
+                        <h4 class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
+                            CAMTS ACCREDITED</h4>
                     </div>
-
-                    <!-- Features -->
-                    <div class="scroll-reveal-right">
-                        <h2 class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-6 leading-tight">
-                            Why We're India's Best Air Ambulance Service</h2>
-                        <div class="space-y-7">
-                            <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="0">
-                                <div
-                                    class="flex-shrink-0 w-11 h-11 bg-primary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg">
-                                    01</div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-1">Zero-Error Readiness</h4>
-                                    <p class="text-on-surface-variant text-sm leading-relaxed">Our clinical teams
-                                        undergo 500+ hours of annual aerospace medicine simulation to ensure peak
-                                        performance under pressure.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="1">
-                                <div
-                                    class="flex-shrink-0 w-11 h-11 bg-secondary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg shadow-secondary/30">
-                                    02</div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-1">Transparent Air Ambulance Cost in India</h4>
-                                    <p class="text-on-surface-variant text-sm leading-relaxed">From Pilatus PC-12 for
-                                        remote airstrips to Beechcraft King Air 200 for trans-continental hauls — clear
-                                        pricing with no hidden fees.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item flex gap-5 opacity-0 translate-x-8" data-index="2">
-                                <div
-                                    class="flex-shrink-0 w-11 h-11 bg-tertiary text-white flex items-center justify-center rounded font-headline font-bold text-sm shadow-lg shadow-tertiary/30">
-                                    03</div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-1">Medical First Philosophy</h4>
-                                    <p class="text-on-surface-variant text-sm leading-relaxed">Pilots and Doctors work
-                                        in synchronized command. Safety is never compromised for speed, yet we operate
-                                        the fastest air ambulance service in India.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="text-on-surface-variant text-xs leading-relaxed">
+                        The global gold standard in air medical transport. CAMTS accreditation ensures strict
+                        protocols for aircraft, crew training, and patient care - trusted worldwide.</p>
                 </div>
 
-                <!-- Certification Cards — 4-column grid -->
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-
-                    <!-- CAMTS -->
-                    <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-[#00357f] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                        data-delay="0">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-[#00357f]/10 flex items-center justify-center flex-shrink-0">
-                                <span class="material-symbols-outlined text-[#00357f] text-lg">verified</span>
-                            </div>
-                            <h4
-                                class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
-                                CAMTS Certified</h4>
+                <!-- ISO -->
+                <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-emerald-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    data-delay="100">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-white shadow-sm flex items-center justify-center flex-shrink-0 p-1.5 border border-primary/5">
+                            <img src="assets/logo/ISO logo.jpg" alt="ISO 9001:2015 Certified"
+                                class="w-full h-full object-contain" />
                         </div>
-                        <p class="text-on-surface-variant text-xs leading-relaxed">Commission on Accreditation of
-                            Medical Transport Systems — the global gold standard. Only CAMTS-certified providers meet
-                            the strictest protocols for aircraft, crew training &amp; patient care.</p>
+                        <h4 class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
+                            ISO 9001:2015 CERTIFIED</h4>
                     </div>
-
-                    <!-- ISO -->
-                    <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-emerald-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                        data-delay="100">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-emerald-500/10 flex items-center justify-center flex-shrink-0">
-                                <span
-                                    class="material-symbols-outlined text-emerald-600 text-lg">workspace_premium</span>
-                            </div>
-                            <h4
-                                class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
-                                ISO 9001:2015 Certified</h4>
-                        </div>
-                        <p class="text-on-surface-variant text-xs leading-relaxed">We are the <strong>ONLY</strong> air
-                            ambulance provider in India &amp; the UAE–India corridor holding both CAMTS and ISO
-                            certification simultaneously. No competitor holds both.</p>
-                    </div>
-
-                    <!-- FAA -->
-                    <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-amber-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                        data-delay="200">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-amber-500/10 flex items-center justify-center flex-shrink-0">
-                                <span class="material-symbols-outlined text-amber-600 text-lg">flight_takeoff</span>
-                            </div>
-                            <h4
-                                class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
-                                FAA-Approved Equipment</h4>
-                        </div>
-                        <p class="text-on-surface-variant text-xs leading-relaxed">Every piece of onboard medical
-                            equipment holds Federal Aviation Administration approval — ventilators, defibrillators,
-                            cardiac monitors, IV pumps &amp; ECMO all certified for use at altitude.</p>
-                    </div>
-
-                    <!-- M Certified -->
-                    <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-secondary shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                        data-delay="300">
-                        <div class="flex items-center gap-3 mb-3">
-                            <div
-                                class="w-9 h-9 rounded-lg bg-secondary/10 flex items-center justify-center flex-shrink-0">
-                                <span class="material-symbols-outlined text-secondary text-lg">medical_services</span>
-                            </div>
-                            <h4
-                                class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
-                                M Certified Medical Escorts</h4>
-                        </div>
-                        <p class="text-on-surface-variant text-xs leading-relaxed">Our medical escorts hold M
-                            Certification — the highest qualification for in-flight medical personnel. The person beside
-                            your loved one is clinically qualified to manage any emergency mid-flight.</p>
-                    </div>
-
+                    <p class="text-on-surface-variant text-xs leading-relaxed">Internationally recognized quality
+                        management certification, ensuring consistent processes, safety standards, and reliable
+                        patient handling across every mission.
+                    </p>
                 </div>
+
+                <!-- FAA -->
+                <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-amber-500 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    data-delay="200">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-white shadow-sm flex items-center justify-center flex-shrink-0 p-1.5 border border-primary/5">
+                            <img src="assets/logo/FAA Logo.png" alt="FAA-Approved Medical Equipment"
+                                class="w-full h-full object-contain" />
+                        </div>
+                        <h4 class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
+                            FAA-APPROVED MEDICAL EQUIPMENT</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-xs leading-relaxed">
+                        All onboard medical equipment is approved for in-flight use - ensuring safety, reliability,
+                        and performance even at high altitudes.
+                    </p>
+                </div>
+
+                <!-- M Certified -->
+                <div class="cert-card opacity-0 translate-y-6 bg-white rounded-xl p-5 border-t-4 border-secondary shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                    data-delay="300">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div
+                            class="w-12 h-12 rounded-lg bg-white shadow-sm flex items-center justify-center flex-shrink-0 p-1.5 border border-primary/5">
+                            <img src="assets/logo/DGCA LOGO.png" alt="DGCA-Compliant Operations"
+                                class="w-full h-full object-contain" />
+                        </div>
+                        <h4 class="font-headline font-black text-primary text-xs uppercase tracking-wide leading-tight">
+                            DGCA-COMPLIANT OPERATIONS</h4>
+                    </div>
+                    <p class="text-on-surface-variant text-xs leading-relaxed">
+                        Fully compliant with aviation regulations for medical flights, ensuring every transfer meets
+                        required safety, legal, and operational standards.</p>
+                </div>
+
             </div>
-            <!-- Texture -->
-            <div
-                class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-high/30 -skew-x-12 translate-x-1/2 pointer-events-none">
-            </div>
-        </section>
+        </div>
+        <!-- Texture -->
+        <div
+            class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-high/30 -skew-x-12 translate-x-1/2 pointer-events-none">
+        </div>
+    </section>
     </section>
 
 
@@ -601,32 +650,49 @@
                     <!-- Testimonial 1 (Priya M.) -->
                     <div
                         class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
-                        <div class="flex gap-1 text-secondary mb-6">
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-secondary">
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <!-- Google G Logo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 flex-shrink-0">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
                         </div>
                         <p class="text-on-surface text-sm italic leading-relaxed mb-8">
-                            "My father suffered a cardiac event in Dubai. Within 9 minutes of my WhatsApp message, Air
-                            Medical 24X7 had a coordinator on the phone with a full plan. He was in a Delhi hospital bed
-                            within 18 hours. The real-time tracking link they sent meant I could watch his flight from
-                            London."
+                            "Excellent Service and support provided by Mr Nitin and team of Worldwide Air Medical 24x7
+                            from Dubai to Kathmandu repatriation services bed to bed. I highly recommend for their
+                            services as good communication, support, update at regular intervals and above all
+                            competitive cost Hghly appreciated."
                         </p>
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold text-xs uppercase">
-                                PM</div>
+                                RF</div>
                             <div>
-                                <p class="font-headline font-bold text-primary text-sm">Priya M.</p>
-                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Dubai to Delhi
-                                    Air Ambulance</p>
+                                <p class="font-headline font-bold text-primary text-sm">Robert Ferns</p>
+                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Dubai to
+                                    Kathmandu</p>
                             </div>
                         </div>
                     </div>
@@ -634,17 +700,34 @@
                     <!-- Testimonial 2 (Fideliza Barraca) -->
                     <div
                         class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
-                        <div class="flex gap-1 text-secondary mb-6">
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-secondary">
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <!-- Google G Logo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 flex-shrink-0">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
                         </div>
                         <p class="text-on-surface text-sm italic leading-relaxed mb-8">
                             "I would like to express my deepest gratitude to the entire Worldwide Air Medical 24x7 team
@@ -667,17 +750,34 @@
                     <!-- Testimonial 3 (Philly wall_e) -->
                     <div
                         class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
-                        <div class="flex gap-1 text-secondary mb-6">
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-secondary">
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <!-- Google G Logo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 flex-shrink-0">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
                         </div>
                         <p class="text-on-surface text-sm italic leading-relaxed mb-8">
                             "Our heartfelt gratitude to the compassionate and caring staff of Air Medical 24X7. I can't
@@ -698,33 +798,52 @@
                     </div>
 
                     <!-- Testimonial 4 (Mohammed Abdulqayyum) -->
+
                     <div
                         class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
-                        <div class="flex gap-1 text-secondary mb-6">
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-secondary">
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <!-- Google G Logo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 flex-shrink-0">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
                         </div>
                         <p class="text-on-surface text-sm italic leading-relaxed mb-8">
-                            "I am very much grateful to Mr. Nitin & Air medical team 24/7 for the excellent services
-                            given during my daughter's repatriation process to Hyderabad from Jeddah. Dr. Agarwal & Mr.
-                            Lateef shown extraordinary support. They are the Best team."
+                            "I am writing to express my heartfelt gratitude to Mr saif and team for your exceptional
+                            care and dedication in ensuring the safe transportation of my daughter from Dubai to
+                            Nigeria. Your professionalism, expertise, and compassion have left a lasting impression on
+                            me, and I am forever grateful."
                         </p>
                         <div class="flex items-center gap-4">
                             <div
                                 class="w-10 h-10 bg-tertiary text-white rounded-full flex items-center justify-center font-bold text-xs uppercase">
-                                MA</div>
+                                AO</div>
                             <div>
-                                <p class="font-headline font-bold text-primary text-sm">Mohammed Abdulqayyum</p>
-                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Jeddah to
-                                    Hyderabad</p>
+                                <p class="font-headline font-bold text-primary text-sm">Aremu Olayinka</p>
+                                <p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Dubai to
+                                    Nigeria</p>
                             </div>
                         </div>
                     </div>
@@ -733,17 +852,34 @@
                     <!-- Testimonial 2 (Rahul K.) -->
                     <div
                         class="min-w-[85vw] md:min-w-[400px] snap-center bg-surface-container-low p-8 rounded-2xl border border-outline-variant/10 hover:shadow-xl transition-all duration-300 group/card">
-                        <div class="flex gap-1 text-secondary mb-6">
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
-                            <span class="material-symbols-outlined text-sm"
-                                style="font-variation-settings: 'FILL' 1;">star</span>
+                        <div class="flex items-center justify-between mb-4">
+                            <div class="flex gap-1 text-secondary">
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">star</span>
+                            </div>
+                            <!-- Google G Logo -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-5 h-5 flex-shrink-0">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                    fill="#EA4335" />
+                            </svg>
                         </div>
                         <p class="text-on-surface text-sm italic leading-relaxed mb-8">
                             "When every second counted during my brother's critical trauma in Patna, Air Medical India
@@ -844,17 +980,15 @@
                         <button class="w-full flex justify-between items-center p-6 text-left group">
                             <span
                                 class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">Can
-                                you bring a patient from Dubai / UAE to India?</span>
+                                you bring a patient from Dubai/UAE to India?</span>
                             <span
                                 class="material-symbols-outlined transform transition-transform group-[.active]:rotate-180">expand_more</span>
                         </button>
                         <div
                             class="faq-answer hidden p-6 pt-0 text-on-surface-variant text-sm border-t border-slate-50 leading-relaxed">
-                            Yes. Air Medical 24X7 has offices in both Dubai (near Terminal 1) and New Delhi — making us
-                            the only provider with local expertise at both ends of the UAE–India corridor. We manage UAE
-                            hospital discharge, GDRFA and DGCA clearances, insurance billing, the flight itself, and
-                            hospital admission in India. We also offer real-time tracking so family members in any
-                            country can follow the journey live.
+                            Yes. We have offices in both Dubai and New Delhi, making us the only provider with local
+                            expertise at both ends. We handle everything - UAE hospital discharge, DGCA clearances, the
+                            flight, and hospital admission in India.
                         </div>
                     </div>
 
@@ -870,10 +1004,8 @@
                         </button>
                         <div
                             class="faq-answer hidden p-6 pt-0 text-on-surface-variant text-sm border-t border-slate-50 leading-relaxed">
-                            In most cases, Air Medical 24X7 can dispatch an air ambulance within 2–6 hours of
-                            confirmation for domestic routes in India. International routes typically take 12–24 hours
-                            due to DGCA clearances. We begin coordination the moment you call — our 10-minute quote
-                            guarantee means you have a full plan within minutes of your first contact.
+                            Domestic routes: 2–6 hours from confirmation. International routes: 12–24 hours due to DGCA
+                            clearances. We begin coordination the moment you call.
                         </div>
                     </div>
 
@@ -882,19 +1014,17 @@
                         class="faq-item bg-white rounded-xl border border-outline-variant/10 overflow-hidden transition-all duration-300">
                         <button class="w-full flex justify-between items-center p-6 text-left group">
                             <span
-                                class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">What
+                                class="font-headline font-bold text-primary group-hover:text-secondary transition-colors">
                                 What does CAMTS certified mean for air ambulance?</span>
                             <span
                                 class="material-symbols-outlined transform transition-transform group-[.active]:rotate-180">expand_more</span>
                         </button>
                         <div
                             class="faq-answer hidden p-6 pt-0 text-on-surface-variant text-sm border-t border-slate-50 leading-relaxed">
-                            CAMTS — Commission on Accreditation of Medical Transport Systems — is the highest
-                            international accreditation for air medical transport. A CAMTS-certified provider meets
-                            rigorous standards for aircraft equipment, medical crew training, patient care protocols,
-                            and operational safety. Air Medical 24X7 is CAMTS certified, as well as ISO certified —
-                            making us the only provider in the India–UAE corridor to hold both accreditations
-                            simultaneously.
+                            CAMTS is the highest global accreditation for air medical transport, ensuring strict
+                            standards in equipment, crew training, patient care, and safety. Air Medical 24X7 is both
+                            CAMTS accredited and ISO certified - the only provider in the India–UAE corridor holding
+                            both.
                         </div>
                     </div>
 
@@ -910,11 +1040,9 @@
                         </button>
                         <div
                             class="faq-answer hidden p-6 pt-0 text-on-surface-variant text-sm border-t border-slate-50 leading-relaxed">
-                            All Air Medical 24X7 aircraft are equipped with FAA-approved ICU-level medical equipment
-                            including: ventilators, cardiac monitors, defibrillators, IV pumps, pulse oximeters,
-                            emergency medication kits, and ECMO equipment for critical cardiac and pulmonary cases. The
-                            equipment is certified for use at cruising altitude and maintained to the same standards as
-                            hospital ICUs.
+                            All aircraft carry FAA-approved ICU equipment - ventilators, cardiac monitors,
+                            defibrillators, IV pumps, pulse oximeters, emergency medication kits, and ECMO for critical
+                            cardiac and pulmonary cases.
                         </div>
                     </div>
 
@@ -932,12 +1060,9 @@
                         </button>
                         <div
                             class="faq-answer hidden p-6 pt-0 text-on-surface-variant text-sm border-t border-slate-50 leading-relaxed">
-                            Many health insurance and corporate insurance policies do cover air ambulance transport in
-                            India, particularly for medically necessary emergency transfers. Air Medical 24X7 handles
-                            insurance coordination directly — including prior authorisation, clinical documentation, and
-                            direct billing to your insurer. Our CAMTS and ISO certifications mean our documentation
-                            meets all major insurer standards. Contact us and we will verify your coverage within the
-                            hour.
+                            Many policies do cover medically necessary air ambulance transfers. We handle insurance
+                            coordination directly — prior authorisation, clinical documentation, and direct billing.
+                            Contact us and we'll verify your coverage within the hour.
                         </div>
                     </div>
                 </div>
@@ -950,52 +1075,93 @@
         <div class="absolute inset-0 bg-gradient-to-t from-secondary/5 to-transparent pointer-events-none"></div>
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 max-w-7xl mx-auto relative z-10">
             <div class="md:col-span-4 scroll-reveal-up">
-                <div class="flex items-center gap-3 mb-4 group cursor-pointer">
+                <a href="https://www.airmedical24x7.com/"
+                    class="flex items-center gap-3 mb-4 group cursor-pointer hover:opacity-80 transition-opacity">
                     <img src="assets/air-medical-logo.png" alt="Air Medical India – Air Ambulance Service in India"
                         class="h-10 w-auto object-contain brightness-0 invert" />
-                </div>
+                </a>
                 <p class="text-secondary font-black uppercase tracking-widest text-[9px] mb-2 leading-relaxed">
                     Air Medical 24X7 — India's Most Certified Air Ambulance Service
                 </p>
                 <p class="text-slate-400 text-xs mb-6 leading-relaxed">
                     Trusted by 17,000+ families across 100+ countries. Offices in Dubai and New Delhi. Available 24x7.
                 </p>
+                <div class="flex gap-4 mt-8 text-[10px] font-black uppercase tracking-widest opacity-60">
+                    <a href="https://www.airmedical24x7.com/privacy-policy"
+                        class="hover:text-secondary transition-colors">Privacy Policy</a>
+                    <span class="text-slate-700">/</span>
+                    <a href="https://www.airmedical24x7.com/terms-and-conditions"
+                        class="hover:text-secondary transition-colors">Terms of Use</a>
+                </div>
             </div>
 
             <div class="md:col-span-4 scroll-reveal-up delay-100">
                 <h5 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 text-slate-500">Global Offices</h5>
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 gap-5">
                     <div>
                         <p class="text-secondary font-bold text-[9px] uppercase tracking-widest mb-1">New Delhi</p>
-                        <p class="text-slate-400 text-[10px] leading-tight mb-1">Rajendra Place, New Delhi — 110008</p>
+                        <p class="text-slate-400 text-[10px] leading-tight mb-1">1111, 11th Floor, Padma Tower 1,
+                            Rajendra Place, New Delhi - 110008, (INDIA)</p>
                         <a href="tel:+918800028727" class="text-white font-bold text-xs hover:text-secondary">+91 88000
                             28727</a>
                     </div>
                     <div>
                         <p class="text-secondary font-bold text-[9px] uppercase tracking-widest mb-1">Dubai, UAE</p>
-                        <p class="text-slate-400 text-[10px] leading-tight mb-1">Near Dubai Airport Terminal-1, Dubai
+                        <p class="text-slate-400 text-[10px] leading-tight mb-2">310, Garhoud Community, Near Dubai
+                            International Airport Terminal-1, P.O. Box : 29086 Dubai – (U.A.E)
                         </p>
+                        <a href="tel:+971565542001"
+                            class="text-white font-bold text-xs hover:text-secondary block mb-3">+971 56 554 2001</a>
+
                     </div>
                 </div>
             </div>
 
             <div class="md:col-span-4 scroll-reveal-up delay-200 text-right">
-                <h5 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 text-slate-500">Emergency Dispatch
+                <h5 class="text-[10px] font-black uppercase tracking-[0.2em] mb-4 text-slate-500">24X7 Emergency
+                    Helpline
                 </h5>
                 <a href="tel:18004108898"
                     class="font-headline text-3xl font-black text-white hover:text-secondary mb-4 block tracking-tighter">1800
                     410 8898</a>
-                <div class="flex justify-end gap-3 text-[9px] font-black uppercase tracking-widest opacity-50">
-                    <a href="#">Privacy</a><span class="text-slate-800">/</span><a href="#">Terms</a>
+                <div class="flex justify-end gap-4 mt-6">
+                    <!-- Social Media Placeholders -->
+                    <a href=https://www.facebook.com/airmedical24x7/
+                        class="text-slate-500 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+                        </svg>
+                    </a>
+                    <a href=https://www.instagram.com/airmedical24x7/
+                        class="text-slate-500 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+                    <a href=https://in.linkedin.com/company/airmedical24x7
+                        class="text-slate-500 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                    <a href=https://x.com/airmedical24x7 class="text-slate-500 hover:text-white transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div
             class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 relative z-10 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p class="text-slate-500 text-[10px] font-label">© 2024 Air Medical India. Aviation Excellence.</p>
+            <p class="text-slate-500 text-[10px] font-label">© 2026 Air Medical India.</p>
             <div class="flex items-center gap-2 text-[9px] text-slate-500 font-bold uppercase tracking-widest">
-                <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>International Response Ready
+                <div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
             </div>
         </div>
     </footer>
@@ -1007,15 +1173,27 @@
 
     <script src="script.js"></script>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919217710155?text=I%20need%20an%20Emergency%20Air%20Ambulance.%20Please%20help."
-        class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-        <div class="whatsapp-pulse"></div>
-        <svg viewBox="0 0 24 24">
-            <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-        </svg>
-    </a>
+    <!-- WhatsApp Floating Button with Popup -->
+    <div class="whatsapp-wrapper"
+        style="position:fixed;bottom:28px;right:24px;z-index:9999;display:flex;align-items:center;gap:10px;">
+        <!-- Popup Label -->
+        <a href="https://wa.me/919217710155?text=I%20need%20an%20Emergency%20Air%20Ambulance.%20Please%20help."
+            target="_blank" rel="noopener noreferrer" class="whatsapp-popup-label"
+            style="background:#25D366;color:#fff;font-family:sans-serif;font-size:12px;font-weight:700;padding:8px 14px;border-radius:20px;white-space:nowrap;box-shadow:0 4px 15px rgba(37,211,102,0.4);text-decoration:none;opacity:0;transform:translateX(10px);transition:opacity 0.3s ease,transform 0.3s ease;pointer-events:none;">
+            💬 Chat with us on WhatsApp
+        </a>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919217710155?text=I%20need%20an%20Emergency%20Air%20Ambulance.%20Please%20help."
+            class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+            onmouseenter="document.querySelector('.whatsapp-popup-label').style.opacity='1';document.querySelector('.whatsapp-popup-label').style.transform='translateX(0)';document.querySelector('.whatsapp-popup-label').style.pointerEvents='auto';"
+            onmouseleave="document.querySelector('.whatsapp-popup-label').style.opacity='0';document.querySelector('.whatsapp-popup-label').style.transform='translateX(10px)';document.querySelector('.whatsapp-popup-label').style.pointerEvents='none';">
+            <div class="whatsapp-pulse"></div>
+            <svg viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+        </a>
+    </div>
 </body>
 
 </html>

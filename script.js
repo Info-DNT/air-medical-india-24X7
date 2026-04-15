@@ -201,5 +201,23 @@ document.addEventListener('DOMContentLoaded', () => {
     initAutoSlide('testimonial-carousel', 3500);
     initAutoSlide('services-carousel', 4500);
 
+    // --- 6. WHATSAPP AUTO-POPUP (7 seconds after page load) ---
+    setTimeout(() => {
+        const popup = document.querySelector('.whatsapp-popup-label');
+        if (!popup) return;
+
+        // Show popup
+        popup.style.opacity = '1';
+        popup.style.transform = 'translateX(0)';
+        popup.style.pointerEvents = 'auto';
+
+        // Auto-hide after 6 seconds
+        setTimeout(() => {
+            popup.style.opacity = '0';
+            popup.style.transform = 'translateX(10px)';
+            popup.style.pointerEvents = 'none';
+        }, 6000);
+    }, 7000);
+
     console.log('Air Medical India - Production Engine Stable');
 });
